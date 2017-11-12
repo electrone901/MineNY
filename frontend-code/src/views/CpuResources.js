@@ -72,7 +72,7 @@ export default class CpuResources extends Component {
           </div>
         </div>
 
-        <h1 style={{ fontSize: '30', paddingBottom: '10', fontWeight: 'bold' }}>Mining For: </h1>
+        <h1 style={{ fontSize: '30', paddingBottom: '10', fontFamily: 'Futura' }}>Mining For: </h1>
         <div className="align-middle">
           <form className="align-middler">
             <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.hands.org/projects/usvi-hurricane-response/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}>  All Hands Volunteers</a><br/>

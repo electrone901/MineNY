@@ -9,7 +9,7 @@ class Stats extends Component {
 
   componentWillMount() {
     const s = document.createElement('script');
-    s.src = "https://authedmine.com/lib/simple-ui.min.js";
+    s.src = 'https://authedmine.com/lib/simple-ui.min.js';
     s.async = true;
 
     document.body.appendChild(s);
