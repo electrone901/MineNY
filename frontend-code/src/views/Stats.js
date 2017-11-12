@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Button, Grid, Row, Col, Table, thead, tbody, tr, td, th} from 'react-bootstrap';
+import Iframe from 'react-iframe'
 
 class Stats extends Component {
   constructor(props){
@@ -38,7 +39,14 @@ class Stats extends Component {
             </Col>
           </Row>
           <Row>
-            <Button><a target="_blank" href="http://dylanch.github.io/coinpredict/" style={{ padding: '25', fontSize: '20', marginTop: '20'}}>Chart</a></Button>
+            <Iframe url="http://dylanch.github.io/coinpredict/"
+               width="450px"
+               height="450px"
+               id="myId"
+               className="myClassname"
+               display="initial"
+               position="relative"
+               allowFullScreen style={{ padding: 20 }}/>
           </Row>
         </Grid>
       </div>
