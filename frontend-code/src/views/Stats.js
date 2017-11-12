@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Row, Col, Table, thead, tbody, tr, td, th} from 'react-bootstrap';
+import {Button, Grid, Row, Col, Table, thead, tbody, tr, td, th} from 'react-bootstrap';
 
 class Stats extends Component {
   constructor(props){
@@ -17,7 +17,7 @@ class Stats extends Component {
       <div className="jumbotron" style={{borderRadius: '0', backgroundColor: '#fff'}}>
         <h1 className="display-3" style={styles.header}>Statistics</h1>
         <Grid fluid={true}>
-          <Row>
+          <Row style={{ marginBottom: '25'}}>
             <Col xs={12} md={12} lg={12} style={{ padding: '0'}}>
               <Table condensed hover>
                 <thead>
@@ -38,7 +38,7 @@ class Stats extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={12} lg={7} style={{ padding: '0' }}><div className="coinmarketcap-currency-widget" data-currency="monero" data-base="USD"  data-secondary="BTC"></div></Col>
+            <Button><a target="_blank" href="http://dylanch.github.io/coinpredict/" style={{ padding: '25', fontSize: '20', marginTop: '20'}}>Chart</a></Button>
           </Row>
         </Grid>
       </div>

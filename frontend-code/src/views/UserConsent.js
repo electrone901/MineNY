@@ -12,7 +12,7 @@ export class UserConsent extends Component {
     return (
       <div className="App" style={styles.div}>
         <div className="jumbotron" style={{borderRadius: '0', marginBottom: '0', backgroundColor: '#fff'}}>
-          <h1 className="display-3" style={styles.header}>iMineForNYC</h1>
+          <h1 className="display-3" style={styles.header}><img src={require('../images/iMineNY.png')} style={{ width: '110', height: '110'}} />iMineForNYC</h1>
           <p className="lead" style={styles.leadText}>Fundraise With USD & Digital Currency</p>
           <hr style={styles.hr} />
           <p style={styles.text}>The Mine New York Iniative can leverage User CPU processing to mine Alternative Cryptocurrencies. Monero (XMR) is currently supported. Revenue will go to a charity of your pick.</p>
