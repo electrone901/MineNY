@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {Grid, Row, Col, Table, thead, tbody, tr, td, th} from 'react-bootstrap';
-import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
-import SimpleAreaChart from './SimpleAreaChart';
 
 class Stats extends Component {
   constructor(props){
@@ -9,13 +7,12 @@ class Stats extends Component {
     this.state={}   
   }
 
-  componentWillMount () {
-    const script = document.createElement("script");
+  componentWillMount() {
+    const s = document.createElement('script');
+    s.src = "https://authedmine.com/lib/simple-ui.min.js";
+    s.async = true;
 
-    script.src = "https://files.coinmarketcap.com/static/widget/currency.js";
-    script.async = true;
-
-    document.body.appendChild(script);
+    document.body.appendChild(s);
   }
 
   render() {
@@ -24,30 +21,36 @@ class Stats extends Component {
         <h1 className="display-3" style={styles.header}>Statistics</h1>
         <Grid fluid={true}>
           <Row>
-            <Col xs={12} md={12} lg={7} style={{ padding: '0' }}>
-              <SimpleAreaChart />
-            </Col>
-            <Col xs={12} md={12} lg={5} style={{ padding: '0'}}>
+            <Col xs={12} md={12} lg={12} style={{ padding: '0'}}>
               <Table condensed hover>
                 <thead>
                   <tr>
-                    <th style={{ fontSize: 30 }}>XMR</th>
-                    <th style={{ fontSize: 30 }}>USD</th>
-                    <th style={{ fontSize: 30 }}>Hash Rate</th>
+                    <th style={{ fontSize: 20, fontFamily: 'Futura' }}>XMR</th>
+                    <th style={{ fontSize: 20, fontFamily: 'Futura' }}>USD</th>
+                    <th style={{ fontSize: 20, fontFamily: 'Futura' }}>Hash Rate Per Second</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td style={{ fontSize: 25 }}>1</td>
-                    <td style={{ fontSize: 25 }}>$118.64</td>
-                    <td style={{ fontSize: 25 }}>Value</td>
+                    <td style={{ fontSize: 20 }}>1</td>
+                    <td style={{ fontSize: 20 }}>$118.64</td>
+                    <td style={{ fontSize: 20 }}>58.2</td>
                   </tr>
                 </tbody>
               </Table>
             </Col>
           </Row>
+          <Row>
+            <Col xs={12} md={12} lg={7} style={{ padding: '0' }}>
+              <div
+                className="coinmarketcap-currency-widget"
+                data-currency="monero"
+                data-base="USD"
+                data-secondary="BTC"
+              />
+            </Col>
+          </Row>
         </Grid>
-        <div className="coinmarketcap-currency-widget" data-currency="monero" data-base="USD"  data-secondary="BTC" style={styles.currencyWidget}></div>
       </div>
     );
   }

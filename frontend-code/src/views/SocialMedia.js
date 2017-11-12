@@ -44,8 +44,8 @@ export default class SocialMedia extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h2> Your Links </h2>
+      <div>
+        <h2 style={{ paddingBottom: '15', fontFamily: 'Futura' }}>Your Links </h2>
         {
           (this.state.links) ? 
           (<table className="table table-bordered table-responsive table-hover">
@@ -53,7 +53,7 @@ export default class SocialMedia extends Component {
               {this.state.links.map((link, key) => {
                 return(
                   <tr key={key}>
-                    <td colSpan="1"><a href={link.url} target="_blank" className="glyphicon glyphicon-folder-open" style={{fontSize:'25px'}}> {link.name} </a>
+                    <td colSpan="1"><a href={link.url} target="_blank" style={{ fontSize:'20px' }}><span className="glyphicon glyphicon-folder-open" style={{ fontSize:'20px', padding: '25'}}></span>{link.name} </a>
                     </td>
                   </tr>) 
                 })
@@ -64,7 +64,7 @@ export default class SocialMedia extends Component {
         }
 
         <p className="App-intro">
-          <button onClick={ () => this.handleClick() }> + </button>
+          <button onClick={ () => this.handleClick() } style={{ paddingLeft: '40', paddingRight: '40', borderRadius: '6', fontFamily: 'Futura'}}>+</button>
         </p>
 
         <ToggleDisplay show={this.state.show}>

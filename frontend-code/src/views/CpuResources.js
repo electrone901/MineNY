@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import ToggleDisplay from 'react-toggle-display';
-import { RadioGroup, RadioButton } from 'react-radio-buttons';
 
 export default class CpuResources extends Component {
   constructor() {
@@ -51,7 +49,7 @@ export default class CpuResources extends Component {
       currentLength == 0;
       document.getElementById("myProgress").value == currentLength;
     } else {
-      alert("You reached the minimum length of the progressbar!")
+      alert("You have reached the maximum CPU threshold!")
     }
   }
 
@@ -61,7 +59,7 @@ export default class CpuResources extends Component {
     return (
       <div className="container">
         <center>
-          <p className="lead" style={{fontSize: '30px', fontFamily: 'Futura'}}> Monetize Your Charity With Your CPU Power </p>
+          <p className="lead" style={{fontSize: '32', fontFamily: 'Futura'}}> Monetize Your Charity With Your CPU Power </p>
         </center><br/><br/>
 
         <div class="container">
@@ -74,7 +72,7 @@ export default class CpuResources extends Component {
           </div>
         </div>
 
-        <h1> I am mining for: </h1>
+        <h1 style={{ fontSize: '30', paddingBottom: '10', fontWeight: 'bold' }}>Mining For: </h1>
         <div className="align-middle">
           <form className="align-middler">
             <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.hands.org/projects/usvi-hurricane-response/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}>  All Hands Volunteers</a><br/>
@@ -85,7 +83,7 @@ export default class CpuResources extends Component {
             <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.citymeals.org/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}> CityMeals-on-Wheels </a><br/><br/><br/>
           </form>
 
-          <center><button type="button" className="btn btn-primary btn-lg" data-toggle="modal"data-target="#myModal">Monetize now</button></center><br/><br/>
+          <center><button type="button" className="btn btn-primary btn-lg" data-toggle="modal"data-target="#myModal" style={{ paddingTop: '15', paddingBottom: '15', paddingLeft: '40', paddingRight: '40' }}>Monetize Now</button></center><br/><br/>
         </div>
 
         <div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
