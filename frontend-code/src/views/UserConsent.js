@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 
 export class UserConsent extends Component {
 
@@ -15,6 +16,7 @@ export class UserConsent extends Component {
           <p className="lead" style={styles.leadText}>Fundraise With USD & Digital Currency</p>
           <hr style={styles.hr} />
           <p style={styles.text}>The Mine New York Iniative can leverage User CPU processing to mine Alternative Cryptocurrencies. Monero (XMR) is currently supported. Revenue will go to a charity of your pick.</p>
+          <Button bsStyle="primary" bsSize="large" style={{ paddingTop: '15', paddingBottom: '15', paddingLeft: '40', paddingRight: '40', marginBottom: '25px' }}>Add As Homepage</Button>
         </div>
       </div>
     );

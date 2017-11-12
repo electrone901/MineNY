@@ -7,10 +7,9 @@ class Stats extends Component {
     this.state={}   
   }
 
-  componentWillMount() {
-    const script = document.createElement("script");
-    script.src = 'https://authedmine.com/lib/simple-ui.min.js';
-    document.body.appendChild(script);
+  componentWillMount () {
+      const script = document.createElement("script");
+
   }
 
   render() {
