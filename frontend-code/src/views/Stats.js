@@ -8,11 +8,9 @@ class Stats extends Component {
   }
 
   componentWillMount() {
-    const s = document.createElement('script');
-    s.src = 'https://authedmine.com/lib/simple-ui.min.js';
-    s.async = true;
-
-    document.body.appendChild(s);
+    const script = document.createElement("script");
+    script.src = 'https://authedmine.com/lib/simple-ui.min.js';
+    document.body.appendChild(script);
   }
 
   render() {
@@ -41,14 +39,7 @@ class Stats extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={12} lg={7} style={{ padding: '0' }}>
-              <div
-                className="coinmarketcap-currency-widget"
-                data-currency="monero"
-                data-base="USD"
-                data-secondary="BTC"
-              />
-            </Col>
+            <Col xs={12} md={12} lg={7} style={{ padding: '0' }}><div className="coinmarketcap-currency-widget" data-currency="monero" data-base="USD"  data-secondary="BTC"></div></Col>
           </Row>
         </Grid>
       </div>

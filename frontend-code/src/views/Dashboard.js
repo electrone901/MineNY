@@ -43,7 +43,7 @@ class Dashboard extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={12} lg={12} style={{ padding: '0' }}>
+          <Col xs={12} md={12} lg={12} style={{ backgroundColor: '#f1f1f1', paddingTop: '150', paddingBottom: '50'}}>
             <CpuResources />
           </Col>
         </Row>

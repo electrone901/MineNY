@@ -64,23 +64,23 @@ export default class CpuResources extends Component {
 
         <div class="container">
           <div class="jumbotron">
-            <button className="btn btn-success"  onClick={ () => this.decreaseLength() }> - </button>
-
-            <progress id="myProgress"  value="0" max="100" style={{backgroundColor:'white', width:'90%', height:'25px', paddingLeft: '30px', paddingRight: '30px'}}></progress>
-
-            <button className="btn btn-danger" onClick={ () => this.increaseLength() }> + </button><br/><br/><br/>
+            <div style={{ height: '80', width: '90%', borderRadius: '6', backgroundColor: '#fff', paddingTop: '25', marginBottom: '40' }}>
+              <button className="btn btn-danger"  onClick={ () => this.decreaseLength() } style={{ marginLeft: '15px', marginBottom: '15' }}> - </button>
+              <progress id="myProgress"  value="0" max="100" style={{ backgroundColor: 'white', width:'90%', height:'25px', paddingLeft: '30px', paddingRight: '30px'}}></progress>
+              <button className="btn btn-success" onClick={ () => this.increaseLength() } style={{ marginRight: '12px', marginBottom: '15' }}> + </button><br/><br/><br/>
+            </div>
           </div>
         </div>
 
         <h1 style={{ fontSize: '30', paddingBottom: '10', fontFamily: 'Futura' }}>Mining For: </h1>
         <div className="align-middle">
           <form className="align-middler">
-            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.hands.org/projects/usvi-hurricane-response/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}>  All Hands Volunteers</a><br/>
-            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.gofundme.com/raise-funds/hurricanemaria"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}> GoFundMe </a><br/>
-            <input type="radio" name="fruit" value="Hands" /> <a href={"https://support.crs.org/donate/hurricane-irma-relief"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}> Catholic Relief Services</a><br/>
-            <input type="radio" name="fruit" value="Hands" /> <a href={"http://www.unidosporpuertorico.com/en/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}> United For Puerto Rico</a><br/>
-            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.robinhood.org"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}> Robin Hood Foundation</a><br/>
-            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.citymeals.org/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px'}}> CityMeals-on-Wheels </a><br/><br/><br/>
+            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.hands.org/projects/usvi-hurricane-response/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px', color: '#2F71AA', fontWeight: 'bold' }}>  All Hands Volunteers</a><br/>
+            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.gofundme.com/raise-funds/hurricanemaria"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px', color: '#2F71AA', fontWeight: 'bold' }}> GoFundMe </a><br/>
+            <input type="radio" name="fruit" value="Hands" /> <a href={"https://support.crs.org/donate/hurricane-irma-relief"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px', color: '#2F71AA', fontWeight: 'bold' }}> Catholic Relief Services</a><br/>
+            <input type="radio" name="fruit" value="Hands" /> <a href={"http://www.unidosporpuertorico.com/en/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px', color: '#2F71AA', fontWeight: 'bold' }}> United For Puerto Rico</a><br/>
+            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.robinhood.org"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px', color: '#2F71AA', fontWeight: 'bold' }}> Robin Hood Foundation</a><br/>
+            <input type="radio" name="fruit" value="Hands" /> <a href={"https://www.citymeals.org/"} target="_blank" style={{fontSize:'25px', paddingLeft:'20px', color: '#2F71AA', fontWeight: 'bold' }}> CityMeals-on-Wheels </a><br/><br/><br/>
           </form>
 
           <center><button type="button" className="btn btn-primary btn-lg" data-toggle="modal"data-target="#myModal" style={{ paddingTop: '15', paddingBottom: '15', paddingLeft: '40', paddingRight: '40' }}>Monetize Now</button></center><br/><br/>
