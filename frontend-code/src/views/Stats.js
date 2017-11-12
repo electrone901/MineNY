@@ -40,7 +40,7 @@ class Stats extends Component {
           </Row>
           <Row>
             <Iframe url="http://dylanch.github.io/coinpredict/"
-               width="450px"
+               width="100%"
                height="450px"
                id="myId"
                className="myClassname"
