@@ -16,7 +16,7 @@ class Dashboard extends Component {
     return (
       <Grid fluid={true}>
         <Row>
-          <Col xs={12} md={12} lg={12} style={colStyles}>
+          <Col xs={12} md={12} lg={12} style={{ padding: '0' }}>
             <UserConsent />
           </Col>
         </Row>
@@ -34,9 +34,5 @@ class Dashboard extends Component {
     );
   }
 }
-
-const colStyles = {
-  padding: 0
-};
 
 export default Dashboard;

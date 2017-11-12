@@ -8,7 +8,7 @@ class SocialMedia extends Component {
 
   render() {
     return (
-      <div className="jumbotron" style={{borderRadius: '0', backgroundColor: '#f7f7f7', marginTop: '27', marginBottom: '0'}}>
+      <div className="jumbotron" style={{borderRadius: '0', backgroundColor: '#f7f7f7', marginTop: '35', marginBottom: '0'}}>
         <h1 className="display-3" style={styles.header}>Social</h1>
       </div>
     );
@@ -17,7 +17,7 @@ class SocialMedia extends Component {
 
 const styles = {
   header: {
-    fontSize: 25,
+    fontSize: 45,
     fontFamily: 'Futura'
   },
 
